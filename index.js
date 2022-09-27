@@ -15,6 +15,10 @@ fastify.get("/preferences", async (request, reply) => {
   return { data: userPreference };
 });
 
+fastify.get("/", async (request, reply) => {
+  return { data: "hello, world" };
+});
+
 // Run the server!
 const start = async () => {
   try {
